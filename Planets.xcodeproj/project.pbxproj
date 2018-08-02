@@ -13,6 +13,10 @@
 		9DDBBD112113609800A55978 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDBBD0F2113609800A55978 /* LaunchScreen.storyboard */; };
 		9DDBBD19211360D100A55978 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD18211360D100A55978 /* Planet.swift */; };
 		9DDBBD1F211360F500A55978 /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD1E211360F500A55978 /* PlanetController.swift */; };
+		9DDBBD212113661F00A55978 /* PlanetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD202113661F00A55978 /* PlanetCollectionViewCell.swift */; };
+		9DDBBD262113678F00A55978 /* PlanetsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD252113678F00A55978 /* PlanetsCollectionViewController.swift */; };
+		9DDBBD2B2113748200A55978 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD2A2113748200A55978 /* SettingsViewController.swift */; };
+		9DDBBD2D211376BE00A55978 /* SettingsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD2C211376BE00A55978 /* SettingsKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9DDBBD122113609800A55978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DDBBD18211360D100A55978 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		9DDBBD1E211360F500A55978 /* PlanetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
+		9DDBBD202113661F00A55978 /* PlanetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCollectionViewCell.swift; sourceTree = "<group>"; };
+		9DDBBD252113678F00A55978 /* PlanetsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsCollectionViewController.swift; sourceTree = "<group>"; };
+		9DDBBD2A2113748200A55978 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9DDBBD2C211376BE00A55978 /* SettingsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				9DDBBD062113609700A55978 /* AppDelegate.swift */,
+				9DDBBD2C211376BE00A55978 /* SettingsKeys.swift */,
 				9DDBBD1A211360D500A55978 /* Model */,
 				9DDBBD1C211360E000A55978 /* Model Controller */,
-				9DDBBD1D211360E700A55978 /* View Controllers */,
+				9DDBBD272113679300A55978 /* View Controllers */,
+				9DDBBD222113662400A55978 /* Views */,
 				9DDBBD1B211360DA00A55978 /* Resources */,
 			);
 			path = Planets;
@@ -92,9 +102,19 @@
 			path = "Model Controller";
 			sourceTree = "<group>";
 		};
-		9DDBBD1D211360E700A55978 /* View Controllers */ = {
+		9DDBBD222113662400A55978 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9DDBBD202113661F00A55978 /* PlanetCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9DDBBD272113679300A55978 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9DDBBD252113678F00A55978 /* PlanetsCollectionViewController.swift */,
+				9DDBBD2A2113748200A55978 /* SettingsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -170,9 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DDBBD212113661F00A55978 /* PlanetCollectionViewCell.swift in Sources */,
+				9DDBBD262113678F00A55978 /* PlanetsCollectionViewController.swift in Sources */,
 				9DDBBD1F211360F500A55978 /* PlanetController.swift in Sources */,
 				9DDBBD072113609700A55978 /* AppDelegate.swift in Sources */,
 				9DDBBD19211360D100A55978 /* Planet.swift in Sources */,
+				9DDBBD2B2113748200A55978 /* SettingsViewController.swift in Sources */,
+				9DDBBD2D211376BE00A55978 /* SettingsKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
