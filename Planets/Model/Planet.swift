@@ -10,9 +10,9 @@ import UIKit
 
 struct Planet {
     
-    init(name: String, imageName: String) {
+    init(name: String) {
         self.name = name
-        self.image = UIImage(named: imageName)!
+        self.image = UIImage(named: name)!
     }
     
     var name: String

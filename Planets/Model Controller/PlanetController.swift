@@ -9,26 +9,21 @@
 import Foundation
 
 class PlanetController {
-    var planetsWithoutPluto = [
-        Planet(name: "Mercury", imageName: "mercury"),
-        Planet(name: "Venus", imageName: "venus"),
-        Planet(name: "Earth", imageName: "earth"),
-        Planet(name: "Mars", imageName: "mars"),
-        Planet(name: "Jupiter", imageName: "jupiter"),
-        Planet(name: "Saturn", imageName: "saturn"),
-        Planet(name: "Uranus", imageName: "uranus"),
-        Planet(name: "Neptune", imageName: "neptune"),
-        ]
-    
-    var planetsWithPluto = [
-        Planet(name: "Mercury", imageName: "mercury"),
-        Planet(name: "Venus", imageName: "venus"),
-        Planet(name: "Earth", imageName: "earth"),
-        Planet(name: "Mars", imageName: "mars"),
-        Planet(name: "Jupiter", imageName: "jupiter"),
-        Planet(name: "Saturn", imageName: "saturn"),
-        Planet(name: "Uranus", imageName: "uranus"),
-        Planet(name: "Neptune", imageName: "neptune"),
-        Planet(name: "Pluto", imageName: "pluto"),
-        ]
+    var planets: [Planet] {
+        var result = [Planet(name: "Mercury"),
+                      Planet(name: "Venus"),
+                      Planet(name: "Earth"),
+                      Planet(name: "Mars"),
+                      Planet(name: "Jupiter"),
+                      Planet(name: "Saturn"),
+                      Planet(name: "Uranus"),
+                      Planet(name: "Neptune")]
+        
+        let shouldShowPluto = UserDefaults.standard.bool(forKey: .shouldShowPlutoKey)
+        if shouldShowPluto {
+            result.append(Planet(name: "Pluto"))
+        }
+        
+        return result
+    }
 }
